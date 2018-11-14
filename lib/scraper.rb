@@ -16,6 +16,7 @@ class Scraper
       date = courses.css(".date").text
       desc = courses.css("p").text
       Course.new(title, date, desc)
+    end
   end
 
   def make_courses
