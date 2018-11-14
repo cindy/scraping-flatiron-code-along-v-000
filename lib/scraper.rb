@@ -17,8 +17,8 @@ class Scraper
       desc = courses.css("p").text
       c = Course.new
       c.title = title
-      c.date = date
-      c.description = desc)
+      c.schedule = date
+      c.description = desc
     end
   end
 
