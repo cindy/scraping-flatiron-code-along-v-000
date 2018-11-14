@@ -12,7 +12,7 @@ class Scraper
   def get_courses
     doc = get_page
     doc.css(".post").each do |courses|
-      title = courses.css("h2").text
+      title = courses.css("h2")
       date = courses.css(".date").text
       desc = courses.css("p").text
       c = Course.new
